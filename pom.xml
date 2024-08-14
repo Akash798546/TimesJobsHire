@@ -8,7 +8,8 @@
 	<groupId>com.akash</groupId>
 	<artifactId>akash</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	
+	<packaging>war</packaging>
 
 	<name>akash</name>
 	<url>http://maven.apache.org</url>
@@ -130,8 +131,20 @@
                 <target>11</target> <!-- or your required Java version -->
             </configuration>
         </plugin>
+         <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-war-plugin</artifactId>
+            <version>3.4.0</version>
+            <configuration>
+                <!-- Optional: Specify the location of your web.xml if not in default location -->
+                <!-- <webXml>src/main/webapp/WEB-INF/web.xml</webXml> -->
+            </configuration>
+        </plugin>
+        
     </plugins>
 </build>
+
+
 
 
 

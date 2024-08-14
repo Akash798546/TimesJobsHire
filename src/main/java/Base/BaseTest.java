@@ -149,7 +149,7 @@ public class BaseTest {
 		String getAlertText=alert.getText();
 		expectedNormalized	=alertText.replaceAll("\\s+", " ");
 		actualNormalized=alertText.replaceAll("\\s+", " ");
-		System.out.println("The Expected String is : "+expectedNormalized+ " And the Actual String is : "+actualNormalized);
+		System.out.println("The Expected String is : "+expectedNormalized+ " And the Actual String is  : "+actualNormalized);
 		
 		alert.accept();
 		Assert.assertEquals(expectedNormalized, actualNormalized);

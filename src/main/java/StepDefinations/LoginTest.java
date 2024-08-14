@@ -137,7 +137,7 @@ public class LoginTest extends BaseTest{
     @Then("Click on Download Button")
     public void ClickInDownloadResume() throws InterruptedException
     {
-    	Thread.sleep(Duration.ofSeconds(4));
+//    	Thread.sleep(Duration.ofSeconds(4));
     	homepage.ClickOnDownload();
     	BaseTest.SwitchToOriginalWindow();
     	
@@ -163,7 +163,7 @@ public class LoginTest extends BaseTest{
     public void selectAllResumes() throws InterruptedException
     {
        meritplus.slctAllRsms();
-       Thread.sleep(Duration.ofSeconds(2));
+//       Thread.sleep(Duration.ofSeconds(2));
     }
     
     
@@ -201,7 +201,7 @@ public class LoginTest extends BaseTest{
 
     {
     	tgpro.checknow();
-    	Thread.sleep(2000);
+//    	Thread.sleep(2000);
     }
     
     @Given("user is on search Result page by searching email")
@@ -228,13 +228,13 @@ public class LoginTest extends BaseTest{
     public void sndJob() throws InterruptedException
     {
     	sms.sendJobAsSms();
-    	Thread.sleep(Duration.ofSeconds(2));
+//    	Thread.sleep(Duration.ofSeconds(2));
     }
     @Then("Select the particular job to send")
     public void selectJob() throws InterruptedException
     {
     	sms.chooseJob();
-    	Thread.sleep(Duration.ofSeconds(2));
+//    	Thread.sleep(Duration.ofSeconds(2));
     }
     
     @Then("Select the Template")

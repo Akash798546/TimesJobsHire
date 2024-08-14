@@ -73,13 +73,13 @@ public class SendMassEmail extends BaseTest {
 	
 	public void setDesignation() throws InterruptedException
 	{
-		Thread.sleep(Duration.ofSeconds(2));
+//		Thread.sleep(Duration.ofSeconds(2));
 		driver.switchTo().frame(iframe1);
-		Thread.sleep(Duration.ofSeconds(2));
+//		Thread.sleep(Duration.ofSeconds(2));
 		driver.switchTo().frame(iframe);
-		Thread.sleep(Duration.ofSeconds(2));
+//		Thread.sleep(Duration.ofSeconds(2));
 		designation.sendKeys(prop.getProperty("Designation"));
-		Thread.sleep(Duration.ofSeconds(2));
+//		Thread.sleep(Duration.ofSeconds(2));
 	}
 	
 	public void setExp() throws InterruptedException
@@ -88,14 +88,14 @@ public class SendMassEmail extends BaseTest {
 		se.selectByIndex(2);
 		Select se1=new Select(maxexp);
 		se1.selectByIndex(5);
-		Thread.sleep(Duration.ofSeconds(2));
+//		Thread.sleep(Duration.ofSeconds(2));
 		
 	}
 	
 	public void selectCity() throws InterruptedException
 	{
 		location.click();
-		Thread.sleep(Duration.ofSeconds(2));
+//		Thread.sleep(Duration.ofSeconds(2));
 		city.click();
 		
 	}
@@ -118,7 +118,7 @@ public class SendMassEmail extends BaseTest {
 		JavascriptExecutor  js=(JavascriptExecutor ) driver;
 		js.executeScript("arguments[0].scrollIntoView(true);", chkflag);
 //		js.executeScript("window.scrollBy(0,3000)");
-		Thread.sleep(Duration.ofSeconds(4));
+//		Thread.sleep(Duration.ofSeconds(4));
 		((JavascriptExecutor) driver).executeScript("arguments[0].click();", chkflag);
 	}
 	

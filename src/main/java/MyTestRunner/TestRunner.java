@@ -7,9 +7,9 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-    features = "src/main/java/Features/QcHire.feature",
-    glue = {"StepDefinations"},
-    dryRun = false,
+    features = "src/main/java/FeatureFile/RestAssuredFeature.feature",
+    glue = {"StepDefination"},
+    dryRun = true,
     monochrome = true,
     plugin = {"pretty", "html:target/cucumber-reports.html"}
     

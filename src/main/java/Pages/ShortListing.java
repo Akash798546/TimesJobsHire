@@ -48,7 +48,7 @@ public class ShortListing extends BaseTest {
 		((JavascriptExecutor) driver).executeScript("arguments[0].click();", chkbx2);
 		((JavascriptExecutor) driver).executeScript("arguments[0].click();", chkbx3);
 		
-		Thread.sleep(Duration.ofSeconds(3));
+		Thread.sleep(Duration.ofMillis(4000));
 	}
 	
 	public void clickSortlist()

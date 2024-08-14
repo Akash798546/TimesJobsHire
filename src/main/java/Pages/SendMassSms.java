@@ -103,7 +103,7 @@ public class SendMassSms extends BaseTest {
 	public void clickOnSbmtBtn() throws InterruptedException
 	{
 		submit.click();
-		Thread.sleep(Duration.ofSeconds(4));
+		Thread.sleep(Duration.ofMillis(4000));
 	}
 	
 	public void verifyingSmsSuccessfully(String Text)

@@ -11,7 +11,7 @@ import io.cucumber.junit.CucumberOptions;
     glue = {"StepDefination"},
     dryRun = true,
     monochrome = true,
-    plugin = {"pretty", "html:target/cucumber-reports.html"}
+    plugin = {"pretty","json:target/cucumber-report.json", "html:target/cucumber-reports.html"}
     
 )
 public class TestRunner {

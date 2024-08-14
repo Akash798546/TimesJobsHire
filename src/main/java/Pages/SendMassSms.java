@@ -90,7 +90,7 @@ public class SendMassSms extends BaseTest {
 		 ElementText = elem.getText();
 		System.out.println("The list of elements is : "+System.lineSeparator()+ElementText);
 		BaseTest.selectRandomRadioBtn(radiobtns);
-		Thread.sleep(Duration.ofSeconds(2));
+//		Thread.sleep(Duration.ofSeconds(2));
 		tmpMsg=tempmsg.getText();
 		System.out.println("The template msg is : "+tmpMsg);
 	}

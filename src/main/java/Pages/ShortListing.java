@@ -58,13 +58,13 @@ public class ShortListing extends BaseTest {
 	
 	public void createfolder() throws InterruptedException
 	{
-		Thread.sleep(Duration.ofSeconds(2));
+//		Thread.sleep(Duration.ofSeconds(2));
 		driver.switchTo().frame(iframe1);
 		driver.switchTo().frame(iframe);
-		Thread.sleep(Duration.ofSeconds(2));
+//		Thread.sleep(Duration.ofSeconds(2));
 		folder.sendKeys(BaseTest.currentDateAndTime());
 		createFolder.click();
-		Thread.sleep(Duration.ofSeconds(5));
+//		Thread.sleep(Duration.ofSeconds(5));
 	}
 	
 	public void verifyfolder()
